@@ -1,0 +1,13 @@
+{%extends "base.html" %}
+{%block content%}
+{{ super() }}
+<h1>To edit this page you must authorise yourself by logging in with the form below</h1>
+<form action="/">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Password">
+    <small id="passwordHelp" class="form-text text-muted">Remember to keep your password secure.</small><br>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
